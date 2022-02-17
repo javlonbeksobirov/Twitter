@@ -60,14 +60,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun getPosts(): ArrayList<Post> {
         var posts :ArrayList<Post> = ArrayList()
-
-        posts.add(Post(R.drawable.im_10,"Sarvarbek Khalmatov",R.drawable.im_10))
-        posts.add(Post(R.drawable.im_10,"Sherzod Jo`rabekov",R.drawable.im_10))
-        posts.add(Post(R.drawable.ic_baseline_account_circle_24,"Tohir Rahmatullayev",R.drawable.im_10))
-        posts.add(Post(R.drawable.ic_baseline_account_circle_24,"Sherzod Jo`rabekov",R.drawable.im_10))
-        posts.add(Post(R.drawable.ic_baseline_account_circle_24,"Sarvarbek Khalmatov",R.drawable.im_10))
-        posts.add(Post(R.drawable.ic_baseline_account_circle_24,"Tohir Rahmatullayev",R.drawable.im_10))
-
+        posts.add(Post(R.drawable.im_10,"Sarvarbek Khalmatov","https://images.unsplash.com/photo-1638913974023-cef988e81629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"))
+        posts.add(Post(R.drawable.im_10,"Sherzod Jo`rabekov","https://images.unsplash.com/photo-1638913974023-cef988e81629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"))
+        posts.add(Post(R.drawable.im_10,"Sherzod Jo`rabekov","https://images.unsplash.com/photo-1645008558160-c7e4affd16d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"))
+        posts.add(Post(R.drawable.im_10,"Sherzod Jo`rabekov","https://images.unsplash.com/photo-1640622842223-e1e39f4bf627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0MHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"))
         return posts
     }
 }

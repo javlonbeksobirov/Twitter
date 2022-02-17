@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.b12game.twitter.R
 import com.b12game.twitter.model.Post
+import com.bumptech.glide.Glide
 import com.google.android.material.imageview.ShapeableImageView
 
 class FeedAdapter(var context: Context, var items: ArrayList<Post>): RecyclerView.Adapter<RecyclerView.ViewHolder>(){
@@ -22,11 +23,10 @@ class FeedAdapter(var context: Context, var items: ArrayList<Post>): RecyclerVie
 
         if(holder is FeedViewHolder){
             var iv_profile = holder.iv_profile
-            var iv_post = holder.iv_post
+            Glide.with(context).load(feed.photo).into(holder.iv_post)
             var tv_fullname = holder.tv_fullname
 
             iv_profile.setImageResource(feed.profile)
-            iv_post.setImageResource(feed.photo)
             tv_fullname.text = feed.fullname
         }
     }
